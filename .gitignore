@@ -1,0 +1,41 @@
+# Gitignore para el proyecto completo (frontend y backend)
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Backend (Spring Boot/Java)
+target/
+*.log
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.class
+/bin/
+/build/
+.gradle/
+*.ipr
+*.iws
+.factorypath
+.apt_generated/
+.h2.server.properties # Para H2
+.h2.trace.db # Para H2
+
+# Frontend (Angular)
+/node_modules/
+/dist/
+/coverage/
+.angular/ # Carpeta de caché de Angular
+npm-debug.log
+yarn-error.log
+.env
+.vscode/
+
+# Otros
+.DS_Store
+Thumbs.db
