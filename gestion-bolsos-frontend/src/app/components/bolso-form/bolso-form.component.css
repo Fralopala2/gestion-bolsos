@@ -1,0 +1,86 @@
+.bolso-form-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px; /* Espacio si no está en un content-wrapper */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bolso-form-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block; /* Cada label en su propia línea */
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.form-control {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box; /* Importante para que el padding no desborde el ancho */
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 15px; /* Espacio entre botones */
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}

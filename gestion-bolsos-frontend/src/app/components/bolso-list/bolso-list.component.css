@@ -1,0 +1,83 @@
+.bolso-list-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bolso-list-card h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.bolso-table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre las celdas */
+  margin-top: 20px;
+}
+
+.bolso-table th,
+.bolso-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.bolso-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.bolso-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+.bolso-table tr:hover {
+  background-color: #e9ecef; /* Resalta la fila al pasar el ratón */
+}
+
+.table-actions {
+  text-align: center; /* Centra los botones en la celda de acciones */
+  white-space: nowrap; /* Evita que los botones se rompan en varias líneas */
+}
+
+.btn-small {
+  padding: 8px 15px;
+  font-size: 0.85em;
+  margin: 0 5px;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.no-bolsos-message {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  margin-top: 30px;
+}

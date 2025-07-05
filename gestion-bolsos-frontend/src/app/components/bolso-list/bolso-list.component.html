@@ -1,0 +1,35 @@
+<div class="bolso-list-card">
+  <h2>Lista de Bolsos</h2>
+  <div *ngIf="bolsos.length > 0; else noBolsos">
+    <table class="bolso-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Marca</th>
+          <th>Color</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bolso of bolsos">
+          <td>{{ bolso.id }}</td>
+          <td>{{ bolso.nombre }}</td>
+          <td>{{ bolso.marca }}</td>
+          <td>{{ bolso.color }}</td>
+          <td>{{ bolso.precio | currency:'EUR':'symbol':'1.2-2' }}</td>
+          <td>{{ bolso.stock }}</td>
+          <td class="table-actions">
+            <button (click)="editBolso(bolso)" class="btn btn-info btn-small">Editar</button>
+            <button (click)="deleteBolso(bolso.id)" class="btn btn-danger btn-small">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noBolsos>
+    <p class="no-bolsos-message">No hay bolsos registrados.</p>
+  </ng-template>
+</div>

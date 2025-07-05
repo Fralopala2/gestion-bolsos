@@ -1,0 +1,35 @@
+<div class="bolso-form-card">
+  <h2>{{ currentBolso.id ? 'Editar Bolso' : 'Añadir Nuevo Bolso' }}</h2>
+  <form (ngSubmit)="onSubmit()" #bolsoForm="ngForm" novalidate> <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="currentBolso.nombre" required minlength="2" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" [(ngModel)]="currentBolso.marca" required minlength="2" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="color" [(ngModel)]="currentBolso.color" required minlength="2" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" [(ngModel)]="currentBolso.precio" required class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" name="stock" [(ngModel)]="currentBolso.stock" required class="form-control">
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" [disabled]="!bolsoForm.form.valid" class="btn btn-primary">
+        {{ currentBolso.id ? 'Actualizar Bolso' : 'Añadir Bolso' }}
+      </button>
+      <button type="button" (click)="resetForm()" *ngIf="currentBolso.id" class="btn btn-secondary">Cancelar Edición</button>
+    </div>
+  </form>
+</div>

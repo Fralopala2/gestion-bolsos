@@ -23,14 +23,14 @@ target/
 *.iws
 .factorypath
 .apt_generated/
-.h2.server.properties # Para H2
-.h2.trace.db # Para H2
+.h2.server.properties
+.h2.trace.db
 
 # Frontend (Angular)
 /node_modules/
 /dist/
 /coverage/
-.angular/ # Carpeta de caché de Angular
+.angular/
 npm-debug.log
 yarn-error.log
 .env

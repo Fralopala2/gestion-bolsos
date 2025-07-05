@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido del contenedor */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Un fondo suave */
+  min-height: 100vh; /* Para que ocupe toda la altura de la vista */
+  box-sizing: border-box; /* Para que el padding no añada tamaño */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-align: center; /* Centra el título */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column; /* Apila el formulario y la lista verticalmente */
+  gap: 40px; /* Espacio entre el formulario y la lista */
+  width: 90%; /* Ancho máximo para el contenido */
+  max-width: 1000px; /* Limita el ancho en pantallas grandes */
+  background-color: #ffffff; /* Fondo blanco para el contenido */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos básicos para el cuerpo HTML */
+body {
+  margin: 0;
+}
